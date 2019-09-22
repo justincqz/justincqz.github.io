@@ -4,10 +4,28 @@
     <title>Eq</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/56323c7aa5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="libraries/balloons.min.css">
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Maven+Pro|Montserrat|Poiret+One&display=swap" rel="stylesheet">
   </head>
   <body>
-  <div id="content"></div>
   <script src="main.js" type="text/javascript"></script>
+  <div id='bg'></div>
+  <div id="titleDiv">
+    <div id="name">
+      Justin Chong
+    </div>
+    <div id="contentHeaderList">
+      <img id='linkedin' src='./assets/linkedin/linkedin_light.png' onclick="window.location.href = 'https://www.linkedin.com/in/justincqz'" />
+      <img id='github' src="./assets/github/PNG/GitHub-Mark-Light-64px.png" onclick="window.location.href = 'https://github.com/justincqz'" />
+      <span id='playbackIcon' class="fa-stack fa-lg" onclick="pauseAnimation(this.children[0]);">
+        <i class="fas fa-pause fa-stack-1x"></i>
+        <i class="far fa-circle fa-stack-2x"></i>
+      </span>
+      <i id='wizard' class="fas fa-hat-wizard fa-1x" onclick="magic();"></i>
+      <i id='mailIcon' class="fas fa-envelope fa-3x" onclick="mailAnimation(this);"></i>
+    </div>
+  </div>
   </body>
 </html>
